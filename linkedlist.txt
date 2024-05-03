@@ -8,6 +8,18 @@ struct node{
 
 };
 
+
+struct node* insertatbeg(struct node* head,int x)
+{ 
+struct node* temp = (struct node*)malloc(sizeof(struct node));
+temp->next = NULL;
+temp->data = x;
+
+if()
+
+
+}
+
 int main()
 {
 	struct node* head = NULL;
@@ -18,4 +30,6 @@ int main()
 	temp->next = NULL;
 
 	head = temp;
+
+        
 	
