@@ -3,8 +3,19 @@
 
 struct node{
 
-int data;
-struct node* next;
-
+	int data;
+	struct node* next;
 
 };
+
+int main()
+{
+	struct node* head = NULL;
+
+	struct node* temp = (struct node*)(malloc(sizeof(struct node)));
+
+	temp->data = 5;
+	temp->next = NULL;
+
+	head = temp;
+	
