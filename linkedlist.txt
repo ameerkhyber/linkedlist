@@ -15,8 +15,17 @@ struct node* temp = (struct node*)malloc(sizeof(struct node));
 temp->next = NULL;
 temp->data = x;
 
-if()
-
+if(head==NULL)
+{
+	head = temp;
+	return head;
+}
+else
+{
+	temp->next = head;
+	head = temp;
+	return head;
+}
 
 }
 
