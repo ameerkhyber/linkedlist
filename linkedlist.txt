@@ -43,6 +43,13 @@ return;
 
 int main()
 {
+ struct node* head = NULL;
+
+ head = insertabeg(head,5);
  
+ head = insertabeg(head,7);
+ head = insertabeg(head,1);
+ head = insertabeg(head,3);
+ return;
       
 }
