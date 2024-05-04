@@ -1,19 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node{
+ //COMMENT:Made the code of node.
 
+struct node
+{
 	int data;
 	struct node* next;
-
 };
 
+ //COMMENT:Function to impliment node.  
 
 struct node* insertatbeg(struct node* head,int x)
 { 
-struct node* temp = (struct node*)malloc(sizeof(struct node));
-temp->next = NULL;
-temp->data = x;
+        struct node* temp = (struct node*)malloc(sizeof(struct node));
+        temp->next = NULL;
+        temp->data = x;
+
+ //COMMENT:We used if else conditions.
 
 if(head==NULL)
 {
@@ -28,28 +32,36 @@ else
 }
  }
 
-void print(struct node* head){
+ //COMMENT:Function to print the result.  
 
-struct node* p = head;
+void print(struct node* head)
+{
+     struct node* p = head;
+
+ //COMMENT:Used while loop.
 
 while(p!=null)
 {
-printf("%d",p->data);
-p = p->next;
+      printf("%d",p->data);
+      p = p->next;
 }
 printf("\n");
 return;
 }
+
+ //COMMENT: Main class.
 
 int main()
 {
  struct node* head = NULL;
 
  head = insertabeg(head,5);
- 
  head = insertabeg(head,7);
  head = insertabeg(head,1);
  head = insertabeg(head,3);
+ 
+ print(head);
+
  return;
       
 }
